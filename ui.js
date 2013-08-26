@@ -1,8 +1,8 @@
 $( function() {
-    var API_KEY = 'AIzaSyDqk53HcVbo2dP8ULc1qANB9Iejr7iXZOg'
-    var CLIENT_ID = '331203715716.apps.googleusercontent.com'
-    var SERVICE_URL = 'https://www.googleapis.com/freebase/v1'
-    SERVICE_URL = 'https://www.googleapis.com/freebase/v1sandbox'
+    var API_KEY = 'AIzaSyA7umGaja3RjwZiHwLqrm1ajEvrCu1yXhE';
+    var CLIENT_ID = '729524309049.apps.googleusercontent.com';
+    var SERVICE_URL = 'https://www.googleapis.com/freebase/v1';
+    SERVICE_URL = 'https://www.googleapis.com/freebase/v1sandbox';
 
     function freebase_query( query, handler ) {
         // From: https://developers.google.com/freebase/v1/mql-overview#mql-readwrite-documentation
