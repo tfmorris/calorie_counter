@@ -81,7 +81,7 @@ $( function() {
         .suggest( {
             key: API_KEY,
             service_url: SERVICE_URL,
-            filter: '(all type:/m/05v2c_w)'
+            filter: '(all type:/food/recipe)'
         } )
         .bind( 'fb-select', function( evt, data ) {
             var $input = $(this)
@@ -520,13 +520,13 @@ $( function() {
                     create: 'unless_exists',
                     id: null,
                     name: $('#recipe').val(),
-                    type: '/food/recipe/dish'
+                    type: ['/common/topic','/food/dish']
                 },
                 {
                     create: 'unless_exists',
                     id: null,
                     name: $('#recipe').val(),
-                    type: '/food/recipe'
+                    type: ['/common/topic','/food/recipe']
                 }
             ]
 
@@ -593,7 +593,8 @@ $( function() {
 
             $.ajax( {
                 url: freebaseURL,
-                success: function( response, responseText ) {  
+                success: function( response, responseText ) {
+                    // TODO: Save IDs of created nodes
                     console.log( 'written', arguments )
                 },  
                 dataType: 'jsonp'
