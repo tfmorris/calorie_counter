@@ -1,4 +1,4 @@
 Freebase Calorie Counter
 ===============
 
-[Online](//wholcomb.github.io/calorie_counter)
+[Online](//tfmorris.github.io/calorie_counter)
